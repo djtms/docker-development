@@ -13,7 +13,7 @@ RUN go mod download
 
 RUN go build -o myapp
 
-FROM alpine:3.21
+FROM alpine:3.23.2
 
 RUN apk update && apk upgrade && \
     apk add --no-cache openssh curl ca-certificates
